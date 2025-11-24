@@ -1,0 +1,28 @@
+/*
+
+Base styles for the BudgetWise app.
+
+This file is required for Tailwind CSS to inject its utility classes
+
+and for setting the global font.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set Inter as the primary font globally /
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f7f3ed; / Soft, warm background color */
+
+
+/* Custom utility class for the primary button style /
+.btn-primary {
+@apply w-full py-3 mt-8 text-white font-bold rounded-xl shadow-lg transition duration-150 ease-in-out;
+background-color: #e6a72e; / Warm, golden yellow color for branding */
+
+/* Custom utility class for input fields */
+.form-input {
+@apply w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:border-[#e6a72e] focus:ring-1 focus:ring-[#e6a72e] outline-none;
+}

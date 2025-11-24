@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  background: linear-gradient(135deg, #e0f7fa, #ede7f6);
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+}
+
+.auth-bg {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240801/pngtree-falling-money-abstract-background-for-finance-and-success-image_16123416.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.auth-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(8px) brightness(0.9);
+}
+
+/* Card glass look */
+.glass-box {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(31, 38, 135, 0.2);
+}
+
+.btn-accent {
+  background: linear-gradient(90deg, #6ec1e4, #a18cd1);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.btn-accent:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
